@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import "icon-font";
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +17,69 @@
     }
 }
 
+body{
+    background-color: #f5f6f8;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.header {
+    background-color: #fff;
+    .container {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        .search {
+            position: relative;
+            margin-left: 18px;
+            i{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 32px;
+                width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #AAAAAA;
+            }
+            input {
+                height: 32px;
+                width: 100%;
+                background-color: rgba( #DEDEDE, .32);
+                font-size: 14px;
+                padding: 0 15px 0 44px;
+                &::placeholder {
+                    color: #AAAAAA;
+                }
+            }
+        }
+        .menu {
+            margin: 0 auto;
+            ul {
+                display: flex;
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 16px;
+                        color: #AAAAAA;
+                        i{
+                            font-size: 20px;
+                        }
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .user-menu{
+            
+        }
+    }
 }

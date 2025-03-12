@@ -1,4 +1,113 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot?82934119");
+  src: url("../font/iconfont.eot?82934119#iefix") format("embedded-opentype"), url("../font/iconfont.woff2?82934119") format("woff2"), url("../font/iconfont.woff?82934119") format("woff"), url("../font/iconfont.ttf?82934119") format("truetype"), url("../font/iconfont.svg?82934119#iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.svg?82934119#iconfont') format('svg');
+  }
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-dot-3:before {
+  content: "\e800";
+} /* '' */
+.icon-minus:before {
+  content: "\e801";
+} /* '' */
+.icon-camera:before {
+  content: "\e802";
+} /* '' */
+.icon-calendar:before {
+  content: "\e803";
+} /* '' */
+.icon-briefcase:before {
+  content: "\e804";
+} /* '' */
+.icon-up-open:before {
+  content: "\e805";
+} /* '' */
+.icon-edit:before {
+  content: "\e806";
+} /* '' */
+.icon-grid:before {
+  content: "\e807";
+} /* '' */
+.icon-heart:before {
+  content: "\e808";
+} /* '' */
+.icon-down-open:before {
+  content: "\e809";
+} /* '' */
+.icon-message:before {
+  content: "\e80a";
+} /* '' */
+.icon-notification:before {
+  content: "\e80c";
+} /* '' */
+.icon-plus:before {
+  content: "\e80d";
+} /* '' */
+.icon-search:before {
+  content: "\e80e";
+} /* '' */
+.icon-share:before {
+  content: "\e810";
+} /* '' */
+.icon-thumbs-up:before {
+  content: "\e811";
+} /* '' */
+.icon-users:before {
+  content: "\e812";
+} /* '' */
+.icon-video:before {
+  content: "\e813";
+} /* '' */
+.icon-send:before {
+  content: "\e818";
+} /* '' */
+.icon-home:before {
+  content: "\e81a";
+} /* '' */
+.icon-hash:before {
+  content: "\e80b";
+} /* '' */
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +121,67 @@
   outline: 0;
 }
 
+body {
+  background-color: #f5f6f8;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+}
+.header .container {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.header .container .search {
+  position: relative;
+  margin-left: 18px;
+}
+.header .container .search i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAAAAA;
+}
+.header .container .search input {
+  height: 32px;
+  width: 100%;
+  background-color: rgba(222, 222, 222, 0.32);
+  font-size: 14px;
+  padding: 0 15px 0 44px;
+}
+.header .container .search input::-moz-placeholder {
+  color: #AAAAAA;
+}
+.header .container .search input::placeholder {
+  color: #AAAAAA;
+}
+.header .container .menu {
+  margin: 0 auto;
+}
+.header .container .menu ul {
+  display: flex;
+}
+.header .container .menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px;
+  color: #AAAAAA;
+}
+.header .container .menu ul li a i {
+  font-size: 20px;
+}
+.header .container .menu ul li a span {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
