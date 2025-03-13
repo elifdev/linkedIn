@@ -108,6 +108,10 @@
 .icon-hash:before {
   content: "\e80b";
 } /* '' */
+:root {
+  --color: #006699;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -184,4 +188,33 @@ body {
 }
 .header .container .menu ul li a span {
   display: none;
+}
+.header .container .menu ul li a:hover {
+  color: var(--color);
+}
+.header .container .menu ul li.active a {
+  color: var(--color);
+}
+.header .container .menu ul li.active a i {
+  margin-right: 5px;
+}
+.header .container .menu ul li.active a span {
+  display: block;
+}
+.header .container .user-menu > a {
+  display: flex;
+}
+.header .container .user-menu > a .detail {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 6px;
+}
+.header .container .user-menu > a img {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

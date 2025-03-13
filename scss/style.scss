@@ -2,7 +2,9 @@
 
 @import "icon-font";
 
-
+:root {
+    --color : #006699;
+}
 
 * {
     padding: 0;
@@ -74,12 +76,42 @@ body{
                         span {
                             display: none;
                         }
+                        &:hover {
+                            color: var(--color);
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: var(--color);
+                            i{
+                                margin-right: 5px;
+        
+                            }
+                            span {
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
         }
         .user-menu{
-            
+            > a {
+                display: flex;
+                .detail {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    margin-right: 6px;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                    min-width: 24px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }
