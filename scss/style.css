@@ -251,6 +251,19 @@ main .container .sidebar .widget {
   margin-bottom: 16px;
   padding: 15px;
 }
+main .container .sidebar .widget .widget-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  color: var(--color);
+  font-size: 14px;
+  font-weight: 500;
+}
+main .container .sidebar .widget .widget-button:hover {
+  color: #3e9fd0;
+}
 main .container .sidebar .widget h6 {
   font-size: 14px;
   font-weight: 500;
@@ -258,6 +271,24 @@ main .container .sidebar .widget h6 {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .sidebar .widget h6 .description {
+  display: block;
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 4px;
+}
+main .container .sidebar .widget h6 .more-btn {
+  color: #aaa;
+  font-size: 16px;
+  align-self: flex-start;
+  padding-left: 30px;
+}
+main .container .sidebar .widget h6 .more-btn:hover {
+  color: var(--color);
 }
 main .container .sidebar .widget-stats {
   padding: 8px;
@@ -367,6 +398,7 @@ main .container .sidebar .widget-recommendation ul li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
+  align-items: center;
 }
 main .container .sidebar .widget-recommendation ul li a:first-child {
   display: flex;
@@ -401,9 +433,65 @@ main .container .sidebar .widget-recommendation ul li a:last-child {
   width: 24px;
   height: 24px;
   border: 1px solid var(--color);
+  border-radius: 4px;
   color: var(--color);
+  font-size: 13px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition: 300ms background-color, 300ms color;
+}
+main .container .sidebar .widget-recommendation ul li a:last-child:hover {
+  background: var(--color);
+  color: #fff;
+}
+main .container .sidebar .widget-advertisement {
+  padding: 20px 16px 10px;
+}
+main .container .sidebar .widget-advertisement .get-updates .avatars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 30px 0;
+}
+main .container .sidebar .widget-advertisement .get-updates .avatars a img {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+main .container .sidebar .widget-advertisement .get-updates p {
+  font-size: 14px;
+  color: var(--second-color);
+  line-height: 15px;
+  margin-top: 15px;
+}
+main .container .sidebar .widget-advertisement .get-updates p span {
+  font-weight: 500;
+}
+main .container .sidebar .footer {
+  padding-top: 38px;
+}
+main .container .sidebar .footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 12px;
+}
+main .container .sidebar .footer nav a {
+  font-size: 10px;
+  color: #aaa;
+  margin-right: 15px;
+  margin-bottom: 16px;
+}
+main .container .sidebar .footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #aaa;
+}
+main .container .sidebar .footer .copyright img {
+  height: 12px;
 }
 main .container .content {
   flex: 1;
