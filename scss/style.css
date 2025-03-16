@@ -555,4 +555,18 @@ main .container .content .create-post .actions li label i.icon-calendar, main .c
 }
 main .container .content .create-post .actions li label i.icon-edit, main .container .content .create-post .actions li a i.icon-edit {
   color: #E52A34;
+}
+main .container .content .post {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 13px 16px 20px;
+}
+main .container .content .post .post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .container .content .post .post-header .post-author {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

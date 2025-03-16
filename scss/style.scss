@@ -487,6 +487,20 @@ main {
                 }
             
             }
+            .post {
+                background-color: #fff;
+                border-radius: 6px;
+                padding: 13px 16px 20px;
+                .post-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .post-author{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
         }
     }
 }
