@@ -496,4 +496,63 @@ main .container .sidebar .footer .copyright img {
 main .container .content {
   flex: 1;
   margin: 0 30px;
+}
+main .container .content .create-post {
+  background-color: #fff;
+  padding: 16px 16px 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+main .container .content .create-post textarea {
+  width: 100%;
+  resize: none;
+  height: 60px;
+  font-size: 14px;
+}
+main .container .content .create-post textarea::-moz-placeholder {
+  color: #aaa;
+}
+main .container .content .create-post textarea::placeholder {
+  color: #aaa;
+}
+main .container .content .create-post .actions {
+  border-top: 1px solid #EDF0F5;
+  display: flex;
+  padding-top: 8px;
+}
+main .container .content .create-post .actions li {
+  flex: auto;
+}
+main .container .content .create-post .actions li label {
+  cursor: pointer;
+}
+main .container .content .create-post .actions li label input {
+  display: none;
+}
+main .container .content .create-post .actions li label, main .container .content .create-post .actions li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--second-color);
+  padding: 7px 0;
+}
+main .container .content .create-post .actions li label:hover, main .container .content .create-post .actions li a:hover {
+  background-color: #f7f7f7;
+}
+main .container .content .create-post .actions li label i, main .container .content .create-post .actions li a i {
+  margin-right: 8px;
+}
+main .container .content .create-post .actions li label i.icon-camera, main .container .content .create-post .actions li a i.icon-camera {
+  color: #31B057;
+}
+main .container .content .create-post .actions li label i.icon-video, main .container .content .create-post .actions li a i.icon-video {
+  color: #388BF2;
+}
+main .container .content .create-post .actions li label i.icon-calendar, main .container .content .create-post .actions li a i.icon-calendar {
+  color: #FC8338;
+}
+main .container .content .create-post .actions li label i.icon-edit, main .container .content .create-post .actions li a i.icon-edit {
+  color: #E52A34;
 }/*# sourceMappingURL=style.css.map */
