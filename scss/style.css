@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
-  font-family: "iconfont";
-  src: url("../font/iconfont.eot?82934119");
-  src: url("../font/iconfont.eot?82934119#iefix") format("embedded-opentype"), url("../font/iconfont.woff2?82934119") format("woff2"), url("../font/iconfont.woff?82934119") format("woff"), url("../font/iconfont.ttf?82934119") format("truetype"), url("../font/iconfont.svg?82934119#iconfont") format("svg");
+  font-family: "fontello";
+  src: url("../font/fontello.eot?16366245");
+  src: url("../font/fontello.eot?16366245#iefix") format("embedded-opentype"), url("../font/fontello.woff2?16366245") format("woff2"), url("../font/fontello.woff?16366245") format("woff"), url("../font/fontello.ttf?16366245") format("truetype"), url("../font/fontello.svg?16366245#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,13 +12,13 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'iconfont';
-    src: url('../font/iconfont.svg?82934119#iconfont') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?16366245#fontello') format('svg');
   }
 }
 */
 [class^=icon-]:before, [class*=" icon-"]:before {
-  font-family: "iconfont";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: never;
@@ -45,69 +45,75 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-dot-3:before {
+.icon-search:before {
   content: "\e800";
 } /* '' */
-.icon-minus:before {
+.icon-bags:before {
   content: "\e801";
 } /* '' */
-.icon-camera:before {
+.icon-learn:before {
   content: "\e802";
 } /* '' */
-.icon-calendar:before {
+.icon-users:before {
   content: "\e803";
 } /* '' */
-.icon-briefcase:before {
+.icon-usersli:before {
   content: "\e804";
 } /* '' */
-.icon-up-open:before {
+.icon-bell:before {
   content: "\e805";
 } /* '' */
-.icon-edit:before {
+.icon-bookmark:before {
   content: "\e806";
 } /* '' */
-.icon-grid:before {
+.icon-bussiness:before {
   content: "\e807";
 } /* '' */
-.icon-heart:before {
+.icon-users-1:before {
   content: "\e808";
 } /* '' */
-.icon-down-open:before {
+.icon-close:before {
   content: "\e809";
 } /* '' */
-.icon-message:before {
+.icon-world:before {
   content: "\e80a";
 } /* '' */
-.icon-notification:before {
-  content: "\e80c";
-} /* '' */
-.icon-plus:before {
-  content: "\e80d";
-} /* '' */
-.icon-search:before {
-  content: "\e80e";
-} /* '' */
-.icon-share:before {
-  content: "\e810";
-} /* '' */
-.icon-thumbs-up:before {
-  content: "\e811";
-} /* '' */
-.icon-users:before {
-  content: "\e812";
-} /* '' */
-.icon-video:before {
-  content: "\e813";
-} /* '' */
-.icon-send:before {
-  content: "\e818";
-} /* '' */
-.icon-home:before {
-  content: "\e81a";
-} /* '' */
-.icon-hash:before {
+.icon-list-alt:before {
   content: "\e80b";
 } /* '' */
+.icon-info:before {
+  content: "\e80c";
+} /* '' */
+.icon-right-open:before {
+  content: "\e80d";
+} /* '' */
+.icon-up-open:before {
+  content: "\e80e";
+} /* '' */
+.icon-down-open:before {
+  content: "\e80f";
+} /* '' */
+.icon-up-open-big:before {
+  content: "\e810";
+} /* '' */
+.icon-right-open-big:before {
+  content: "\e811";
+} /* '' */
+.icon-left-open-big:before {
+  content: "\e812";
+} /* '' */
+.icon-plus:before {
+  content: "\e813";
+} /* '' */
+.icon-message:before {
+  content: "\e814";
+} /* '' */
+.icon-calendar-empty:before {
+  content: "\f133";
+} /* '' */
+.icon-right:before {
+  content: "\f178";
+} /* '' */
 :root {
   --color: #006699;
   --second-color: #17272F;
@@ -146,6 +152,42 @@ body {
   height: 56px;
   display: flex;
   align-items: center;
+  /*  .user-menu{
+        > a {
+           display: flex;
+            align-items: center;
+            .detail {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                margin-right: 6px;
+                .name {
+                    font-size: 12px;
+                    color: var(--second-color);
+                }
+                .status {
+                    font-size: 10px;
+                    &.online {
+                        color: #31B057;
+                    }
+
+                }
+            }
+            img {
+                width: 24px;
+                height: 24px;
+                min-width: 24px;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+            i {
+                color: #A7B4CC;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+    }*/
 }
 .header .container .logo img {
   width: 41px;
@@ -190,10 +232,18 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 16px;
-  color: #AAAAAA;
+  color: rgba(0, 0, 0, 0.6);
+}
+.header .container .menu ul li a img {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header .container .menu ul li a i {
-  font-size: 20px;
+  font-size: 24px;
 }
 .header .container .menu ul li a span {
   display: none;
@@ -209,39 +259,6 @@ body {
 }
 .header .container .menu ul li.active a span {
   display: block;
-}
-.header .container .user-menu > a {
-  display: flex;
-  align-items: center;
-}
-.header .container .user-menu > a .detail {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  margin-right: 6px;
-}
-.header .container .user-menu > a .detail .name {
-  font-size: 12px;
-  color: var(--second-color);
-}
-.header .container .user-menu > a .detail .status {
-  font-size: 10px;
-}
-.header .container .user-menu > a .detail .status.online {
-  color: #31B057;
-}
-.header .container .user-menu > a img {
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.header .container .user-menu > a i {
-  color: #A7B4CC;
-  font-size: 12px;
-  margin-left: 5px;
 }
 
 main .container {

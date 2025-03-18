@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "icon-font";
+@import "fontello";
 
 :root {
     --color : #006699;
@@ -79,9 +79,17 @@ body{
                         align-items: center;
                         justify-content: center;
                         margin: 0 16px;
-                        color: #AAAAAA;
+                        color: rgb(0 0 0 / .6);;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            min-width: 24px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
                         i{
-                            font-size: 20px;
+                            font-size: 24px;
+                           
                         }
                         span {
                             display: none;
@@ -105,9 +113,9 @@ body{
                 }
             }
         }
-        .user-menu{
+      /*  .user-menu{
             > a {
-                display: flex;
+               display: flex;
                 align-items: center;
                 .detail {
                     display: flex;
@@ -140,7 +148,7 @@ body{
                     margin-left: 5px;
                 }
             }
-        }
+        }*/
     }
 }
 
