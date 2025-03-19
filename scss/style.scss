@@ -71,9 +71,12 @@ body{
         }
         .menu {
             margin: 0 auto;
+            
             ul {
                 display: flex;
+                
                 li {
+                   
                     a {
                         display: flex;
                         align-items: center;
@@ -89,6 +92,7 @@ body{
                         }
                         i{
                             font-size: 24px;
+                            
                            
                         }
                         span {
