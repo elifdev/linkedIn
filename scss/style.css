@@ -118,6 +118,7 @@
   --color: #006699;
   --second-color: #17272F;
   --border-color: #EDF0F5;
+  --body-color:#F4F2EF;
 }
 
 * {
@@ -134,7 +135,7 @@
 }
 
 body {
-  background-color: #f5f6f8;
+  background-color: var(--body-color);
 }
 
 .container {
@@ -148,6 +149,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  padding-top: 2px;
 }
 .header .container {
   max-width: 1128px;
@@ -231,6 +233,7 @@ body {
 }
 .header .container .menu ul li a span {
   white-space: nowrap;
+  padding-bottom: 5px;
 }
 .header .container .menu ul li a:hover {
   color: rgba(0, 0, 0, 0.9);
@@ -278,6 +281,7 @@ body {
 
 main .container {
   display: flex;
+  padding-top: 30px;
 }
 main .container .sidebar {
   min-width: 270px;
