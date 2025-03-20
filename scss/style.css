@@ -260,6 +260,13 @@ body {
 .header .container .menu ul li.active a span {
   display: block;
 }
+.header .container .menu .border-left {
+  width: 2px;
+  height: 56px;
+  background-color: red;
+  margin: 0 8px;
+  align-self: center;
+}
 
 main .container {
   display: flex;

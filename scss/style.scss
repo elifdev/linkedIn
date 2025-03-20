@@ -76,13 +76,14 @@ body{
                 display: flex;
                 
                 li {
-                   
+                
                     a {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         margin: 0 16px;
-                        color: rgb(0 0 0 / .6);;
+                        color: rgb(0 0 0 / .6);
+                       
                         img {
                             width: 24px;
                             height: 24px;
@@ -95,13 +96,17 @@ body{
                             
                            
                         }
+                        
                         span {
                             display: none;
                         }
                         &:hover {
                             color: var(--color);
                         }
+                        
                     }
+                   
+                    
                     &.active {
                         a {
                             color: var(--color);
@@ -114,9 +119,10 @@ body{
                             }
                         }
                     }
+                   
                 }
             }
-        }
+        
       /*  .user-menu{
             > a {
                display: flex;
