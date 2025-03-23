@@ -247,7 +247,7 @@ main {
                 padding: 8px;
                 
                .stat-user {
-                text-align: center;
+                text-align: left;
                 padding-bottom: 16px;
                 margin-bottom: 16px;
                 border-bottom: 1px solid var(--border-color);
@@ -258,7 +258,8 @@ main {
                     border-radius: 4px;
                 }
                 .avatar {
-                    text-align: center;
+                    position: relative;
+                    text-align: left;
                     margin-top: -26px;
                     margin-bottom: 10px;
                     img {
@@ -266,7 +267,7 @@ main {
                         height: 52px;
                         border-radius: 50%;
                         display: block;
-                        margin: 0 auto;
+                        
                         border: 2px solid #fff ;
                     }
                 }
@@ -481,19 +482,42 @@ main {
                 padding: 16px 16px 10px;
                 border-radius: 6px;
                 margin-bottom: 20px;
-                textarea {
-                    width: 100%;
-                    resize: none;
-                    height: 60px;
-                    font-size: 14px;
-                    &::placeholder {
-                        color: #aaa;
-                    }
-                }
-                .actions {
-                    border-top: 1px solid #EDF0F5;
+                .create-header  {
                     display: flex;
-                    padding-top: 8px;
+                      img {
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 50%;
+                        display: block;
+                        
+                        border: 2px solid #fff ;
+                      }
+                      button {
+                        width: 100%;
+                        height: 50px;
+                        border: 1px solid rgb(0 0 0 / .3);;
+                        border-radius: 30px;
+                        flex-grow: 1;
+                        margin: 0 10px ;
+                        background-color: white;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                       span {
+                        position: absolute;
+                        color: rgb(0 0 0 / .75);
+                        margin: 15px;
+                        font-weight: 500;
+                        font-size: 14px;
+                       }
+                      }
+                   
+                }
+               
+                .actions {
+                    
+                    display: flex;
+                    padding-top: 10px;
                     li {
                       flex: auto;
                       label {

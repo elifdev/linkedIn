@@ -336,7 +336,7 @@ main .container .sidebar .widget-stats {
   padding: 8px;
 }
 main .container .sidebar .widget-stats .stat-user {
-  text-align: center;
+  text-align: left;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
@@ -348,7 +348,8 @@ main .container .sidebar .widget-stats .stat-user .cover {
   border-radius: 4px;
 }
 main .container .sidebar .widget-stats .stat-user .avatar {
-  text-align: center;
+  position: relative;
+  text-align: left;
   margin-top: -26px;
   margin-bottom: 10px;
 }
@@ -357,7 +358,6 @@ main .container .sidebar .widget-stats .stat-user .avatar img {
   height: 52px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
   border: 2px solid #fff;
 }
 main .container .sidebar .widget-stats .stat-user .name {
@@ -545,22 +545,38 @@ main .container .content .create-post {
   border-radius: 6px;
   margin-bottom: 20px;
 }
-main .container .content .create-post textarea {
+main .container .content .create-post .create-header {
+  display: flex;
+}
+main .container .content .create-post .create-header img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: block;
+  border: 2px solid #fff;
+}
+main .container .content .create-post .create-header button {
   width: 100%;
-  resize: none;
-  height: 60px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  flex-grow: 1;
+  margin: 0 10px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .container .content .create-post .create-header button span {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 15px;
+  font-weight: 500;
   font-size: 14px;
 }
-main .container .content .create-post textarea::-moz-placeholder {
-  color: #aaa;
-}
-main .container .content .create-post textarea::placeholder {
-  color: #aaa;
-}
 main .container .content .create-post .actions {
-  border-top: 1px solid #EDF0F5;
   display: flex;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 main .container .content .create-post .actions li {
   flex: auto;
