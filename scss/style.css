@@ -252,8 +252,8 @@ body {
 }
 .header .container .menu ul li .notification-badge {
   position: absolute;
-  top: 5px;
-  right: 18px;
+  top: 3px;
+  right: 23px;
   background-color: #cc1016;
   color: white;
   border-radius: 50%;
@@ -339,7 +339,6 @@ main .container .sidebar .widget-stats .stat-user {
   text-align: left;
   padding-bottom: 16px;
   margin-bottom: 16px;
-  border-bottom: 1px solid var(--border-color);
 }
 main .container .sidebar .widget-stats .stat-user .cover {
   height: 43px;
@@ -367,74 +366,86 @@ main .container .sidebar .widget-stats .stat-user .name {
 }
 main .container .sidebar .widget-stats .stat-user .job-title {
   font-size: 14px;
-  color: #AAA;
-  margin-top: 4px;
-  margin-bottom: 16px;
-}
-main .container .sidebar .widget-stats ul {
-  padding: 0 7px 11px;
-}
-main .container .sidebar .widget-stats ul li {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-main .container .sidebar .widget-stats ul li .key {
   color: var(--second-color);
+  margin-top: 4px;
+  margin-bottom: 5px;
 }
-main .container .sidebar .widget-stats ul li .value {
-  color: var(--color);
-  font-weight: 500;
+main .container .sidebar .widget-stats .stat-user .city {
+  color: #aaa;
+  font-size: 12px;
 }
-main .container .sidebar .widget-stats ul li:not(:last-child) {
-  margin-bottom: 16px;
+main .container .sidebar .widget-stats .stat-user button {
+  margin: 20px 0 0 30px;
+  width: 200px;
+  height: 32px;
+  background-color: #f4f2ee;
+  border: 1px dashed #9eb5ca;
 }
-main .container .sidebar .widget-newest ul {
+main .container .sidebar .widget-stats .stat-user button .exper-detail {
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+main .container .sidebar .widget-stats .stat-user button .exper-detail i {
+  font-weight: 600;
+  font-size: 20px;
+}
+main .container .sidebar .widget-newest ul, main .container .sidebar .widget-newest-second ul {
   padding-bottom: 30px;
 }
-main .container .sidebar .widget-newest ul:last-child {
+main .container .sidebar .widget-newest ul:last-child, main .container .sidebar .widget-newest-second ul:last-child {
   padding-bottom: 0;
 }
-main .container .sidebar .widget-newest ul li a {
+main .container .sidebar .widget-newest ul li a, main .container .sidebar .widget-newest-second ul li a {
   display: flex;
   align-items: center;
   font-size: 12px;
   color: var(--color);
   padding: 4px 0;
 }
-main .container .sidebar .widget-newest ul li a:hover {
+main .container .sidebar .widget-newest ul li a:hover, main .container .sidebar .widget-newest-second ul li a:hover {
   color: #222;
 }
-main .container .sidebar .widget-newest ul li a i {
+main .container .sidebar .widget-newest ul li a i, main .container .sidebar .widget-newest-second ul li a i {
   width: 21px;
   font-size: 11px;
 }
-main .container .sidebar .widget-newest ul li a i.icon-hash {
+main .container .sidebar .widget-newest ul li a i.icon-hash, main .container .sidebar .widget-newest-second ul li a i.icon-hash {
   font-size: 12px;
 }
-main .container .sidebar .widget-btn {
-  height: 50px;
-  padding: 0 15px;
+main .container .sidebar .widget-newest ul {
+  padding: 0 7px 11px;
+}
+main .container .sidebar .widget-newest ul p {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+main .container .sidebar .widget-newest ul li {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  color: var(--second-color);
-}
-main .container .sidebar .widget-btn i {
-  color: var(--color);
-  font-size: 12px;
-}
-main .container .sidebar .widget-btn.more {
-  height: 56px;
-  color: var(--color);
-  justify-content: center;
-  font-weight: 500;
   font-size: 14px;
-  transition: 300ms background-color, 300ms color;
 }
-main .container .sidebar .widget-btn.more:hover {
-  color: #fff;
-  background: var(--color);
+main .container .sidebar .widget-newest ul li a:hover {
+  text-decoration: underline;
+}
+main .container .sidebar .widget-newest ul li .key {
+  color: var(--second-color);
+  font-weight: 600;
+}
+main .container .sidebar .widget-newest ul li .value {
+  color: var(--color);
+  font-weight: 500;
+}
+main .container .sidebar .widget-newest ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+main .container .sidebar .widget-newest-second {
+  margin-top: 30px;
+  background-color: #fff;
+}
+main .container .sidebar .widget-newest-second ul li a {
+  color: var(--second-color);
 }
 main .container .sidebar .widget-recommendation ul li {
   display: flex;

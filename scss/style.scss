@@ -151,8 +151,8 @@ body{
                     
                     .notification-badge {
                         position: absolute;
-                        top: 5px;
-                        right: 18px;
+                        top: 3px;
+                        right: 23px;
                         background-color: #cc1016;
                         color: white;
                         border-radius: 50%;
@@ -250,7 +250,7 @@ main {
                 text-align: left;
                 padding-bottom: 16px;
                 margin-bottom: 16px;
-                border-bottom: 1px solid var(--border-color);
+                
                 .cover {
                     height: 43px;
                     background: url(../img/cover-bg.png) no-repeat center ;
@@ -279,34 +279,40 @@ main {
                 }
                 .job-title {
                     font-size: 14px;
-                    color: #AAA;
+                    color: var(--second-color);
                     margin-top: 4px;
-                    margin-bottom: 16px;
+                    margin-bottom: 5px;
+                }
+                .city{
+                    color: #aaa;
+                    font-size: 12px;
+                }
+                button{
+                    
+                    margin:20px 0 0 30px;
+                    width: 200px ;
+                    height: 32px;
+                    background-color: #f4f2ee;
+                    border: 1px dashed #9eb5ca;
+                    
+
+                    .exper-detail {
+                       color: gray;
+                       display: flex;
+                       align-items: center;
+                       i{
+                        font-weight: 600;
+                        font-size: 20px;
+                       }
+                    }
                 }
                  
                }
-               ul {
-                padding: 0 7px 11px;
-                li {
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 14px;
-                    .key {
-                        color: var(--second-color);
-
-                    }
-                    .value {
-                        color: var(--color);
-                        font-weight: 500;
-                    }
-                    &:not(:last-child) {
-                        margin-bottom: 16px;
-                    }
-                }
-             }
+              
             }
 
-            .widget-newest {
+            .widget-newest, .widget-newest-second {
+               
                
                 ul {
                     padding-bottom: 30px;
@@ -335,32 +341,52 @@ main {
                 }
             }
 
-            .widget-btn {
-                height: 50px;
-                padding:  0 15px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                color: var(--second-color);
-                i{
-                    color: var(--color);
-                    font-size: 12px;
-                    
-                }
-            
-                &.more {
-                    height: 56px;
-                    color: var(--color);
-                    justify-content: center;
-                    font-weight: 500;
-                    font-size: 14px;
-                    transition: 300ms background-color , 300ms color;
-                    &:hover {
-                        color: #fff;
-                        background: var(--color);
+            .widget-newest {
+                ul {
+                    padding: 0 7px 11px;
+                    p{
+                        font-size: 12px;
+                        color: #aaa;
+                        margin-bottom: 5px;
+                    }
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        a:hover{
+                           
+                                text-decoration: underline;
+                            
+                        }
+                        .key {
+                            color: var(--second-color);
+                            font-weight: 600;
+    
+                        }
+                        .value {
+                            color: var(--color);
+                            font-weight: 500;
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+                    }
+                 }
+            }
+
+            .widget-newest-second {
+                margin-top: 30px;
+                background-color: #fff;
+                ul {
+                    li{
+                        a{
+                            color: var(--second-color);
+                        }
                     }
                 }
             }
+
+        
             
             .widget-recommendation {
                 ul {
