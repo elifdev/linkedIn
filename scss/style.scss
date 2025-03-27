@@ -86,7 +86,7 @@ body{
                 
                 &:focus {
                     outline: none;
-                    box-shadow: 0 0 0 1px #0a66c2;
+                    box-shadow: 0 0 0 1px #242424;
                 }
             }
         }
@@ -470,7 +470,6 @@ main {
                     unicode-bidi: isolate;
                     margin-bottom: 12px;
                     ul {
-                        list-style-type: none;
                         display: flex;
                         flex-wrap: wrap;
                         align-items: center;
@@ -485,7 +484,6 @@ main {
                                 display: flex;
                                 align-items: center;
                                 flex-wrap: wrap;
-                                text-decoration: none;
                                
                             }
                         }

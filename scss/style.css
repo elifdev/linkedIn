@@ -198,7 +198,7 @@ body {
 }
 .header .container .search input:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #0a66c2;
+  box-shadow: 0 0 0 1px #242424;
 }
 .header .container .menu {
   margin-left: auto;
@@ -516,7 +516,6 @@ main .container .sidebar .footer nav {
   margin-bottom: 12px;
 }
 main .container .sidebar .footer nav ul {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -533,7 +532,6 @@ main .container .sidebar .footer nav ul li a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  text-decoration: none;
 }
 main .container .sidebar .footer .copyright {
   margin: 16px 24px;
