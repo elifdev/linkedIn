@@ -464,25 +464,42 @@ main {
             }
 
             .footer {
-                padding-top: 38px;
+                margin-top: 16px;
                 nav {
-                    display: flex;
-                    flex-wrap: wrap;
-                    
+                    display: block;
+                    unicode-bidi: isolate;
                     margin-bottom: 12px;
-                    a{
-                        font-size: 10px;
-                        color: #aaa;
-                        margin-right: 15px;
-                        margin-bottom: 16px;
+                    ul {
+                        list-style-type: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        li {
+                            display: flex;
+                            margin: 3px 18px;
+                            a{
+                                font-size: 10px;
+                                color: #aaa;
+                                line-height: 13px;
+                                display: flex;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                text-decoration: none;
+                               
+                            }
+                        }
                     }
+                    
                 }
                 .copyright{
+                    margin: 16px 24px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    font-size: 10px;
-                    color: #aaa;
+                    text-align: center;
+                    font-size: 11px;
+                    color: rgb(0 0 0 / .9);;
                     img {
                         height: 12px;
 
@@ -752,9 +769,9 @@ main {
         height: 50px;
         display: flex;
         align-items: center;
-        border: 1px solid gray;
+        border: 1px solid #e0dede;
         background-color: #fff;
-        border-radius: 6px 6px 0 0;
+        border-radius: 8px 8px 0 0;
         padding: 0 10px;
         font-size: 14px;
         color: #202020;
@@ -802,6 +819,11 @@ main {
                 border-radius: 50%;
                 &:hover {
                     background-color: rgba( #fff, .1) ;
+                }
+                i {
+                    color: #6c6b6b;
+                    font-size: 12px;
+                    
                 }
             }
         }
