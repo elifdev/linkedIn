@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "fontello";
-  src: url("../font/fontello.eot?16366245");
-  src: url("../font/fontello.eot?16366245#iefix") format("embedded-opentype"), url("../font/fontello.woff2?16366245") format("woff2"), url("../font/fontello.woff?16366245") format("woff"), url("../font/fontello.ttf?16366245") format("truetype"), url("../font/fontello.svg?16366245#fontello") format("svg");
+  src: url("../font/fontello.eot?42915322");
+  src: url("../font/fontello.eot?42915322#iefix") format("embedded-opentype"), url("../font/fontello.woff2?42915322") format("woff2"), url("../font/fontello.woff?42915322") format("woff"), url("../font/fontello.ttf?42915322") format("truetype"), url("../font/fontello.svg?42915322#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?16366245#fontello') format('svg');
+    src: url('../font/fontello.svg?42915322#fontello') format('svg');
   }
 }
 */
@@ -108,12 +108,30 @@
 .icon-message:before {
   content: "\e814";
 } /* '' */
+.icon-thumbs-up:before {
+  content: "\e815";
+} /* '' */
+.icon-comment:before {
+  content: "\e816";
+} /* '' */
+.icon-paper-plane:before {
+  content: "\e817";
+} /* '' */
+.icon-loop:before {
+  content: "\e818";
+} /* '' */
+.icon-down-micro:before {
+  content: "\e819";
+} /* '' */
 .icon-calendar-empty:before {
   content: "\f133";
 } /* '' */
 .icon-right:before {
   content: "\f178";
 } /* '' */
+.icon-commenting-o:before {
+  content: "\f27b";
+} /* '' */
 :root {
   --color: #006699;
   --second-color: #17272F;
@@ -721,18 +739,22 @@ main .container .content .post .post-alt-detail i.icon-thumbs-up {
 }
 main .container .content .post .post-actions {
   display: flex;
+  justify-content: space-around;
   padding-bottom: 20px;
+  font-weight: 600;
 }
 main .container .content .post .post-actions a {
-  font-size: 16px;
-  color: #aaa;
+  font-size: 15px;
+  color: #393737;
   display: flex;
   align-items: center;
   margin-right: 15px;
+  font-family: Helvetica, sans-serif;
 }
 main .container .content .post .post-actions a i {
-  font-size: 20px;
-  margin-right: 5px;
+  font-size: 15px;
+  margin-right: 3px;
+  color: #252424;
 }
 main .container .content .post .post-actions a:hover {
   color: var(--color);
