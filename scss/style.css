@@ -503,27 +503,51 @@ main .container .sidebar .widget-recommendation .widget-button {
   color: var(--second-color);
 }
 main .container .sidebar .widget-advertisement {
-  padding: 20px 16px 10px;
+  padding: 20px px x;
 }
-main .container .sidebar .widget-advertisement .get-updates .avatars {
+main .container .sidebar .widget-advertisement h6 {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 14px 30px 0;
+}
+main .container .sidebar .widget-advertisement h6 a i {
+  color: #202020;
+}
+main .container .sidebar .widget-advertisement .get-updates {
+  display: flex;
 }
 main .container .sidebar .widget-advertisement .get-updates .avatars a img {
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  width: 60px;
+  height: 60px;
 }
-main .container .sidebar .widget-advertisement .get-updates p {
+main .container .sidebar .widget-advertisement .get-updates .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 7px;
+}
+main .container .sidebar .widget-advertisement .get-updates .info p {
   font-size: 14px;
-  color: var(--second-color);
-  line-height: 15px;
-  margin-top: 15px;
-}
-main .container .sidebar .widget-advertisement .get-updates p span {
   font-weight: 500;
+}
+main .container .sidebar .widget-advertisement .get-updates .info span {
+  font-size: 12px;
+  color: #5b5a5a;
+}
+main .container .sidebar .widget-advertisement .get-updates .info button {
+  margin-top: 3px;
+  padding: 6px 12px;
+  border-radius: 18px;
+  border: 1px solid black;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+}
+main .container .sidebar .widget-advertisement .get-updates .info button i {
+  font-size: 20px;
 }
 main .container .sidebar .footer {
   margin-top: 16px;
