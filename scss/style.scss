@@ -253,7 +253,7 @@ main {
                         height: 52px;
                         border-radius: 50%;
                         display: block;
-                        
+                        object-fit: cover;
                         border: 2px solid #fff ;
                     }
                 }
@@ -449,7 +449,7 @@ main {
                 }
                 .get-updates {
                     display: flex;
-                    
+                    padding-bottom: 20px;
                     .avatars {
                         
                         a {
@@ -457,6 +457,7 @@ main {
                                 border-radius: 50%;
                                 width: 60px;
                                 height: 60px;
+                                object-fit: cover;
                             }
                         }
                     }
@@ -474,11 +475,11 @@ main {
                         color: #5b5a5a;
                     }
                     button {
-                       margin-top: 3px;
-                        padding: 6px 12px;
+                        margin-top: 3px;
+                        padding: 2px 12px;
                         border-radius: 18px;
                         border: 1px solid black;
-                        font-size: 16px;
+                        font-size: 14px;
                         display: inline-flex;
                         align-items: center;
                         justify-content: center;
@@ -491,6 +492,20 @@ main {
 
                    }
                 }
+                .widget-button {
+                    
+                    font-size: 13px;
+                    color: #1a1919;
+                   
+                }
+            }
+
+            .widget-photo img {
+                width: 270px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 6px;
+                
             }
 
             .footer {
@@ -550,7 +565,7 @@ main {
                         height: 52px;
                         border-radius: 50%;
                         display: block;
-                        
+                        object-fit: cover;
                         border: 2px solid #fff ;
                       }
                       button {
@@ -639,6 +654,7 @@ main {
                             height: 36px;
                             border-radius: 50%;
                             margin-right: 12px;
+                            object-fit: cover;
                         }
                         .name {
                             font-size: 14px;
@@ -684,7 +700,8 @@ main {
                 }
                 .post-alt-detail {
                     display: flex;
-                    font-size: 10px;
+                    justify-content: space-between;
+                    font-size: 12px;
                     color: var(--second-color);
                     align-items: center;
                     padding-bottom: 14px;
@@ -693,27 +710,16 @@ main {
                     .likes {
                         display: flex;
                         align-items: center;
-                        margin-right: 10px;
-                        align-items: center;
                         position: relative;
-                        &::after {
-                            content: "\00b7";
-                            width: 2px;
-                            font-weight: 700;
-                            margin-left: 8px;
-                            color: var(--second-color);
-                        }
+                        
+                       button {
+                        cursor: pointer;
+                       }
+                       span {
+                        padding-left: 5px;
+                       }
                     }
-                    i{
-                        font-size: 14px;
-                        margin-right: 10px;
-                        &.icon-heart{
-                            color: #E52A3A;
-                        }
-                        &.icon-thumbs-up {
-                            color: #388BF2;
-                        }
-                    }
+                    
                 }
                 .post-actions {
                     display: flex;
@@ -747,7 +753,7 @@ main {
                         height: 32px;
                         border-radius: 50%;
                         margin-right: 12px;
-
+                        object-fit: cover;
                     }
                     .textarea {
                         flex: 1;

@@ -361,6 +361,8 @@ main .container .sidebar .widget-stats .stat-user .avatar img {
   height: 52px;
   border-radius: 50%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid #fff;
 }
 main .container .sidebar .widget-stats .stat-user .name {
@@ -514,11 +516,14 @@ main .container .sidebar .widget-advertisement h6 a i {
 }
 main .container .sidebar .widget-advertisement .get-updates {
   display: flex;
+  padding-bottom: 20px;
 }
 main .container .sidebar .widget-advertisement .get-updates .avatars a img {
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .container .sidebar .widget-advertisement .get-updates .info {
   display: flex;
@@ -536,10 +541,10 @@ main .container .sidebar .widget-advertisement .get-updates .info span {
 }
 main .container .sidebar .widget-advertisement .get-updates .info button {
   margin-top: 3px;
-  padding: 6px 12px;
+  padding: 2px 12px;
   border-radius: 18px;
   border: 1px solid black;
-  font-size: 16px;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -548,6 +553,17 @@ main .container .sidebar .widget-advertisement .get-updates .info button {
 }
 main .container .sidebar .widget-advertisement .get-updates .info button i {
   font-size: 20px;
+}
+main .container .sidebar .widget-advertisement .widget-button {
+  font-size: 13px;
+  color: #1a1919;
+}
+main .container .sidebar .widget-photo img {
+  width: 270px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
 }
 main .container .sidebar .footer {
   margin-top: 16px;
@@ -605,6 +621,8 @@ main .container .content .create-post .create-header img {
   height: 52px;
   border-radius: 50%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid #fff;
 }
 main .container .content .create-post .create-header button {
@@ -688,6 +706,8 @@ main .container .content .post .post-header .post-author img {
   height: 36px;
   border-radius: 50%;
   margin-right: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .container .content .post .post-header .post-author .name {
   font-size: 14px;
@@ -730,7 +750,8 @@ main .container .content .post .post-content p a:hover {
 }
 main .container .content .post .post-alt-detail {
   display: flex;
-  font-size: 10px;
+  justify-content: space-between;
+  font-size: 12px;
   color: var(--second-color);
   align-items: center;
   padding-bottom: 14px;
@@ -740,26 +761,13 @@ main .container .content .post .post-alt-detail {
 main .container .content .post .post-alt-detail .likes {
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  align-items: center;
   position: relative;
 }
-main .container .content .post .post-alt-detail .likes::after {
-  content: "·";
-  width: 2px;
-  font-weight: 700;
-  margin-left: 8px;
-  color: var(--second-color);
+main .container .content .post .post-alt-detail .likes button {
+  cursor: pointer;
 }
-main .container .content .post .post-alt-detail i {
-  font-size: 14px;
-  margin-right: 10px;
-}
-main .container .content .post .post-alt-detail i.icon-heart {
-  color: #E52A3A;
-}
-main .container .content .post .post-alt-detail i.icon-thumbs-up {
-  color: #388BF2;
+main .container .content .post .post-alt-detail .likes span {
+  padding-left: 5px;
 }
 main .container .content .post .post-actions {
   display: flex;
@@ -793,6 +801,8 @@ main .container .content .post .post-comment-form img {
   height: 32px;
   border-radius: 50%;
   margin-right: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .container .content .post .post-comment-form .textarea {
   flex: 1;
