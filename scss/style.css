@@ -335,7 +335,7 @@ main .container .sidebar .widget h6 .more-btn {
   padding-left: 30px;
 }
 main .container .sidebar .widget h6 .more-btn:hover {
-  color: var(--color);
+  color: rgba(0, 0, 0, 0.9);
 }
 main .container .sidebar .widget-stats {
   padding: 8px;
@@ -411,7 +411,7 @@ main .container .sidebar .widget-newest ul li a, main .container .sidebar .widge
   padding: 4px 0;
 }
 main .container .sidebar .widget-newest ul li a:hover, main .container .sidebar .widget-newest-second ul li a:hover {
-  color: #222;
+  color: rgba(0, 0, 0, 0.9);
 }
 main .container .sidebar .widget-newest ul li a i, main .container .sidebar .widget-newest-second ul li a i {
   width: 21px;
@@ -727,7 +727,7 @@ main .container .content .post .post-header .more {
   font-size: 19px;
 }
 main .container .content .post .post-header .more:hover {
-  color: var(--color);
+  color: rgba(0, 0, 0, 0.9);
 }
 main .container .content .post .post-content {
   padding: 20px 0;
@@ -790,7 +790,7 @@ main .container .content .post .post-actions a i {
   color: #605e5e;
 }
 main .container .content .post .post-actions a:hover {
-  color: var(--color);
+  color: rgba(0, 0, 0, 0.9);
 }
 main .container .content .post .post-comment-form {
   display: flex;
@@ -837,7 +837,7 @@ main .container .content .post .post-comment-form .textarea label {
   padding-right: 5px;
 }
 main .container .content .post .post-comment-form .textarea label:hover {
-  color: var(--color);
+  color: rgba(0, 0, 0, 0.9);
 }
 main .container .content .post .post-comment-form .textarea label input {
   display: none;
